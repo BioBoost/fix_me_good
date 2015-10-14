@@ -1,3 +1,22 @@
 Fix all errors to the programs compile and run as they should.
 
 Make sure to check each README before starting a level.
+
+How to create a new level:
+$ git checkout master
+$ git checkout -b level_x_broken
+
+Create your program
+Add and commit
+
+$ git checkout master
+$ git merge level_x_broken
+
+$ git checkout level_x_broken
+$ git checkout -b level_x_fix
+
+Fix program
+Add and commit
+
+$ git checkout solutions
+$ git merge level_x_fix
